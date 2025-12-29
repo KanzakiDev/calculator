@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">0</div>
+        <div class="keys">
+        <button class="key-operator" data-action="clear" onclick="clearDisplay()">C</button>
+        <button class="key-operator" data-action="delete" onclick="deleteLast()">DEL</button>
+        <button class="key-operator" data-action="percent" onclick="pressOperator('percent')">%</button>
+        <button class="key-operator" data-action="divide" onclick="pressOperator('divide')">/</button>
+        <button class="key-operator" data-action="multiplication" onclick="pressOperator('multiplication')">*</button>
+        <button class="key-operator" data-action="add" onclick="pressOperator('add')">+</button>
+        <button class="key-operator" data-action="subtract" onclick="pressOperator('subtract')">-</button>
+
+        <button class="key-number" data-action="1" onclick="pressNumber('1')">1</button>
+        <button class="key-number" data-action="2" onclick="pressNumber('2')">2</button>
+        <button class="key-number" data-action="3" onclick="pressNumber('3')">3</button>
+        <button class="key-number" data-action="4" onclick="pressNumber('4')">4</button>
+        <button class="key-number" data-action="5" onclick="pressNumber('5')">5</button>
+        <button class="key-number" data-action="6" onclick="pressNumber('6')">6</button>
+        <button class="key-number" data-action="7" onclick="pressNumber('7')">7</button>
+        <button class="key-number" data-action="8" onclick="pressNumber('8')">8</button>
+        <button class="key-number" data-action="9" onclick="pressNumber('9')">9</button>
+        <button class="key-number" data-action="0" onclick="pressNumber('0')">0</button>
+        <button class="key-decimal" data-action="." onclick="pressNumber('.')">.</button>
+        <button class="key-equals" data-action="=" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
